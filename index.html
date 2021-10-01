@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+	<form id="form-registro">  <!-- El instructivo pide que coloquemos este id -->   <!-- Esta instruccion crea la caja -->
+		<div id="contenedor">
+			<div id="header-registro">Registro</div>			 
+				<p>Tipo de documento</p>
+				<select name="menu">
+					<option disabled selected>--Tipo de documento--</option>	
+					<option>Tarjeta Identidad</option>
+					<option>Cédula Ciudadania</option>
+					<option>Pasaporte</option>
+					<option>Tarjeta Residencia</option>
+					<option>Registro civil</option>					
+				</select>	
+				<br>
+				<br>					
+				<label for="numero_de_documento">Número de documento</label>
+				<br>
+				<input type="number" id="numero_de_documento"  name="numero_de_documento" placeholder="123987">
+				<br>
+				<br>
+				<label for="correo">Correo</label>
+				<br>
+				<input type="email" id="correo" name="correo" placeholder="usuario@correo.com" required="re">
+				<br>
+				<br>
+				<label for="contrasena">Contraseña</label>
+				<br>
+				<input type="password" id="contrasena" name="contrasena" placeholder="***">
+				<br>				
+				<button type="submit" id="btn-registrar">Registrar</button>
+				<br>			
+			<div id="footer"></div>
+		</div>		
+	</form>	
+	<script src="formulario.js"></script>
+
+</body>
+</html>
